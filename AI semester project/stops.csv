@@ -1,0 +1,204 @@
+route_num,sub_routes,distance,stop_num
+1,Model Mor,0,1
+1,Malir Halt,2.6,2
+1,Colony Gate,3.9,3
+1,Nata Khan Bridge,3.1,4
+1,Drigh Road Station,2.1,5
+1,PAF Base Faisal,1.3,6
+1,Laal Kothi,3,7
+1,Karsaz,2.3,8
+1,Nursery,3.1,9
+1,FTC,2.4,10
+1,Regent Plaza,4,11
+1,Metropole,1.3,12
+1,Fawwara Chowk,5,13
+1,Arts Council,4.7,14
+1,Shaheen Complex,0.3,15
+1,Tower,2.2,16
+1,Fisheries,3.5,17
+1,Dockyard,3,18
+2,Nagan Chowrangi,0,19
+2,Shafiq Morr,2,20
+2,Sohrab Goth,4.4,21
+2,Gulshan Chowranei,6.4,22
+2,NIPA,1.7,23
+2,Johar Morr,2.4,24
+2,COD,4.6,25
+2,Drigh Road Station,5.3,26
+2,Colony Gate,3.9,27
+2,Shah Faisal Colony,2.5,28
+2,Singer Chowrangi,6.3,29
+2,Landhi Road,5.9,30
+3,Power House,0,31
+3,UP More,1.2,32
+3,Nagan Chowrangi,1.9,33
+3,Sakhi Hasan,1.8,34
+3,5 Star Chowrangi,1.2,35
+3,KDA Chowrangi,2.5,36
+3,Nazimabad Eid Gah Ground,2.8,37
+3,Liaquatabad 10 Number,2,38
+3,Essa Nagri,5.8,39
+3,Civic Centre,3.7,40
+3,National stadium,2.2,41
+3,Karsaz,9.8,42
+3,Nursery,5.1,43
+3,FTC,2.4,44
+3,Korangi Road,2.2,45
+3,KPT Interchange,4,46
+3,Shan Chowrangi,5.1,47
+4,Power House,0,48
+4,UP Mor,1.2,49
+4,Nagan Chowrangi,1.9,50
+4,Shafiq Mor,2,51
+4,Sohrab Goth,4.4,52
+4,Shahrah e Pakistan,4,53
+4,Ayesha Manzil,1.7,54
+4,Liaqautabad 10,7.3,55
+4,Laloo Khait,4,56
+4,Teen Hati,3.3,57
+4,Jehangir Road,1.3,58
+4,Numaish,3.9,59
+4,Mobile Market,7,60
+4,Urdu Bazar,8,61
+4,Civil Hospital,1.8,62
+4,City Court,1.3,63
+4,Light House,0.7,64
+4,Bolton Market,1.2,65
+4,Tower,0.85,66
+5,Salah Uddin Ayubi Road,0,67
+5,Allah Wali Chowrangi,11,68
+5,National Highway 5,12,69
+5,Steel Mill More,7,70
+5,Port Bin Qasim More,2.7,71
+5,Razzakabad,0.8,72
+5,Abdullah Goth,2.9,73
+5,Chowkundi More,2,74
+5,Fast University,2,75
+5,Bhains Colony More,4,76
+5,Manzil Pump,3.4,77
+5,Quaidabad,3.2,78
+5,Murghi Khana,2.3,79
+5,Prince Aly Boys School,2.1,80
+5,Nadra Center Malir,0.55,81
+5,Malir Session Court,1,82
+5,Malir 15,2.1,83
+5,Kalaboard,1.7,84
+5,Malir Halt,1.1,85
+5,Colony Gate,3.5,86
+5,Nata Khan Bridge,4,87
+5,Drigh Road Station,2,88
+5,PAF Base Faisal,5.5,89
+5,Laal Kothi,3.1,90
+5,I.I.Chundrigar,2.4,91
+6,Numaish,0,92
+6,Taj Complex,1.5,93
+6,Capri Cinema,1.7,94
+6,Mobile Market,2.6,95
+6,Regal,1.4,96
+6,Abdullah Haroon,1.5,97
+6,Zainab Market,0.6,98
+6,Fawara Chowk,2.8,99
+6,Metropole,3.2,100
+6,Frere Hall,0.75,101
+6,PSO Head Office,1.3,102
+6,3 Talwar,0.7,103
+6,Ocean Mall,1.7,104
+6,2 Talwar,0.45,105
+6,Abdullah Shah Ghazi Mazar,1.8,106
+6,Dolmen Mall Cilfton,3.4,107
+6,Seaview Clock Tower,3,108
+6,Khayaban e Ittehad,3.7,109
+6,DHA Phase 7,2,110
+6,DHA Phase 6,1.8,111
+6,DHA Phase 2,3,112
+6,KPT Interchange,2.8,113
+6,Korangi Crossing,2.7,114
+6,Indus Hospital,0.4,115
+6,CBM University,1.2,116
+6,PARCO,2.5,117
+6,Ibrahim Hyderi,2.2,118
+7,Bilawal Chowrangi,0,119
+7,26th Street,6,120
+7,Khadda Market,4.8,121
+7,Gizri Road,2,122
+7,Submarine Chowk,0.8,123
+7,Eidgah Clifton,0.8,124
+7,PIDC,3.8,125
+7,Haji Camp,1.8,126
+7,US Consulate General,4.6,127
+7,M.T. Khan Road,5.4,128
+7,Mauripur,7,129
+7,Kea­mari,6,130
+7,Lyari,5,131
+8,Naddi Kinara,0,132
+8,Khokhrapar,1.5,133
+8,Saudabad Chowrangi,2.5,134
+8,RCD Ground,1.1,135
+8,Kalaboard,1.1,136
+8,Malir 15,1.7,137
+8,Malir Mandir,3.8,138
+8,Malir Session Court,2,139
+8,Murghi Khana,3.4,140
+8,Quaidabad,2.3,141
+8,Dawood Chowrangi,2.6,142
+8,Babar Market,3.9,143
+8,Landhi Road,0.16,144
+8,Nasir Jump,7,145
+8,Indus Hospital,1.8,146
+8,Korangi Crossing,2.2,147
+8,Qayyumabad,3.6,148
+8,Defence Mor,2.2,149
+8,National Medical Center,1.9,150
+8,Gora Qabristan,1.4,151
+8,FTC,0.65,152
+8,Jutt Land,3.4,153
+8,Lines Area,0.35,154
+8,Army Public School,5.1,155
+8,Lucky Star Saddar,4,156
+9,CMH Malir Cantt,0,157
+9,Tank Chowk,6,158
+9,Model Colony Mor,2.4,159
+9,Jinnah Ave,0.9,160
+9,Airport,2.2,161
+9,Colony Gate,5.4,162
+9,Nata Khan Bridge,3.6,163
+9,Drigh Road Station,1.3,164
+9,PAF Base Faisal,3,165
+9,Laal Kothi,5,166
+9,Karsaz,5,167
+9,Nursery,2.5,168
+9,FTC,1.3,169
+9,Korangi Road,2,170
+9,DHA Phase 1,2.1,171
+9,Masjid e Ayesha,8,172
+9,Clock Tower DHA,5,173
+9,Dolmen Mall Clifton,4,174
+10,Bahria Town,0,175
+10,Damba Goth,10,176
+10,Toll Plaza,10,177
+10,Baqai University,4,178
+10,Malir Cantt Gate 5,5,179
+10,Malir Cantt Gate 6,3.2,180
+10,Tank Chowk,3,181
+10,Model Mor,5.4,182
+10,Jinnah Ave,0.65,183
+10,Malir Halt,2.7,184
+11,Malir Cantt Check Post 5,0,185
+11,Rim Jhim Tower,3,186
+11,Safoora Chowrangi,0.45,187
+11,Mausamiyat Chowrangi,2,188
+11,Kamran Chowrangi,3.5,189
+11,Darul Sehat Hospital,2,190
+11,Johar Chowrangi,0.8,191
+11,Johar Mor,2,192
+11,Millennium Mall,1,193
+11,Dalmia Road,4.3,194
+11,Bahria University,1.4,195
+11,National Stadium,1.2,196
+11,Aga Khan Hospital,1.6,197
+11,Liaquat National Hospital,2,198
+11,PIB Colony,2.3,199
+11,Jail Chowrangi,2.2,200
+11,Dawood Engineering University,5,201
+11,Islamia College,3.5,202
+11,Numaish,3.2,203

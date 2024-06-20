@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bus Schedules</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+    />
+    <style>
+      #busImage1 {
+        margin: 0 auto;
+        width: 500px;
+        position: absolute;
+        animation: busMove 4s linear infinite;
+        height: 500px;
+        opacity: 0.2;
+        margin-top: -250px;
+        
+      }
+
+      @keyframes busMove {
+        0% {
+          left: calc(120%);
+        }
+        100% {
+          left: -70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg ">
+    <img id="logo" src="/static/logo.png" alt="logo">
+      <a class="navbar-brand" href="/contributors">OUR</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contributors">Contributors</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="text-center my-4">OUR Travels</h1>
+      <div class="card p-4 mb-4">
+        <form action="{{ url_for('home') }}" method="post">
+          <div class="form-group">
+            <label for="start_stop">Starting Stop:</label>
+            <input
+              type="text"
+              id="start_stop"
+              name="start_stop"
+              class="form-control"
+              required
+              autocomplete="off"
+            />
+            <div id="start_stop_suggestions" class="suggestions"></div>
+          </div>
+          <div class="text-center my-4">
+            <img id="busImage1" src="/static/redbus.png" alt="Bus" />
+          </div>
+          <div class="form-group">
+            <label for="end_stop">Ending Stop:</label>
+            <input
+              type="text"
+              id="end_stop"
+              name="end_stop"
+              class="form-control"
+              required
+              autocomplete="off"
+            />
+            <div id="end_stop_suggestions" class="suggestions"></div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      {% if bus_schedules is defined %}
+      <h2 class="text-center my-4">
+        Schedules from {{ start_stop }} to {{ end_stop }}
+      </h2>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th>Bus ID</th>
+              <th>Arrival Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for bus in bus_schedules %}
+            <tr>
+              <td>{{ bus['Bus ID'] }}</td>
+              <td>{{ bus['Arrival Time'] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        function fetchSuggestions(query, callback) {
+          $.ajax({
+            url: "{{ url_for('filter_stops') }}",
+            data: { query: query },
+            success: callback,
+          });
+        }
+
+        function showSuggestions(element, suggestions) {
+          const suggestionBox = $(element).siblings(".suggestions");
+          suggestionBox.empty();
+          suggestions.forEach((suggestion) => {
+            suggestionBox.append(
+              '<div class="suggestion-item">' + suggestion + "</div>"
+            );
+          });
+          suggestionBox.show();
+        }
+
+        $("#start_stop").on("input", function () {
+          const query = $(this).val();
+          if (query.length > 0) {
+            fetchSuggestions(query, function (suggestions) {
+              showSuggestions("#start_stop", suggestions);
+            });
+          } else {
+            $("#start_stop_suggestions").empty().hide();
+          }
+        });
+
+        $("#end_stop").on("input", function () {
+          const query = $(this).val();
+          if (query.length > 0) {
+            fetchSuggestions(query, function (suggestions) {
+              showSuggestions("#end_stop", suggestions);
+            });
+          } else {
+            $("#end_stop_suggestions").empty().hide();
+          }
+        });
+
+        $(document).on("click", ".suggestion-item", function () {
+          const input = $(this).closest(".form-group").find("input");
+          input.val($(this).text());
+          $(".suggestions").empty().hide();
+        });
+      });
+    </script>
+  </body>
+</html>

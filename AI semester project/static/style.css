@@ -1,0 +1,129 @@
+body {
+  background: linear-gradient(
+    to right,
+    #f8dfdf,
+    #ffd9d9
+  ); 
+  font-family: "Arial", sans-serif;
+  color: #c62828;
+}
+.navbar{
+    background: rgba(218, 144, 144, 0.562);
+    
+}
+.navbar a{
+    font-family: "Arial", sans-serif;
+    color: #c62828;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 30px;
+}
+#logo{
+    height: 65px;
+    width: 65px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 100px;
+}
+h1 {
+  font-size: 3rem;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(218, 144, 144, 0.562);
+  color: #000000;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+
+}
+
+.table thead th {
+  padding: 10px;
+  background-color: #ff444494; 
+  color: #fff; 
+  border: 0px solid #ff0000; 
+  border-radius: 50px;
+}
+
+.table tbody td {
+  padding: 10px;
+  border: 1px solid #dee2e6; 
+  border-radius: 50px;
+}
+
+.table tbody tr {
+  background-color: #ffe9e9; 
+}
+
+.table tbody tr:hover {
+  background-color: #e9ecef; 
+}
+
+.btn-primary {
+  background-color: #c62828; 
+  border: none;
+  font-size: 1rem;
+  width: 300px; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: block; 
+  margin: 20px auto; 
+}
+
+.btn-primary:hover {
+  background-color: #9a1e1e; 
+}
+
+.form-control {
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+}
+
+.suggestions {
+  border: 1px solid #ddd;
+  border-top: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f1f1;
+}
+
+#busImage {
+  display: block;
+  margin: 0 auto;
+  width: 200px; 
+  position: relative;
+}
+
+.move-right {
+  transition: transform 1s;
+  transform: translateX(100px);
+}
+
+.move-left {
+  transition: transform 0.5s;
+  transform: translateX(0);
+}
+
+.move-out {
+  transition: transform 0.5s;
+  transform: translateX(100vw);
+}

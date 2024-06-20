@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contributors</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+    <style>
+        .card {
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(218, 144, 144, 0.562);
+            color: #000000;
+            margin-bottom: 20px;
+            height: 400px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .img-fluid {
+            max-width: 50%;
+            height: auto;
+            border-radius: 200px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+        <div class="row">
+            {% for contributor in contributors %}
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="{{ contributor['image_path'] }}" class="img-fluid" alt="Contributor Image">
+                        <h5 class="card-title">{{ contributor['name'] }}</h5>
+                        <p class="card-text">{{ contributor['description'] }}</p>
+                        <p class="card-text">Email: {{ contributor['email'] }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</body>
+</html>
